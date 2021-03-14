@@ -1,0 +1,488 @@
+@import 'fonts.css';
+
+:root {
+    --fr900: 'Roboto Black';
+    --fr700: 'Roboto Bold';
+    --fr500: 'Roboto Medium';
+    --fr400: 'Roboto Regular';
+    --fr300: 'Roboto Light';
+    --fr100: 'Roboto Thin';
+    --fos700: 'OpenSans Bold';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* ========================================== header start ================================ */
+
+.header {
+    height: 986px;
+}
+
+.menu {
+    padding: 40px 0;
+}
+
+.menu i {
+    font-size: 28px;
+    color: #746f77;
+}
+
+.logo {
+    color: rgba(1, 21, 85, 0.7);
+    font-family: var(--fr900);
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+
+.logo:hover {
+    color: rgba(1, 21, 85, 0.7);
+}
+
+.header__content {
+    background: url(../images/header_bg.jpg) no-repeat center/ cover;
+}
+
+.header__content-title {
+    font-family: var(--fr100);
+    font-size: 50px;
+    color: #626262;
+    line-height: 37px;
+    margin-bottom: 22px;
+}
+
+.header__content-title span {
+    font-family: var(--fr700);
+    color: #011556;
+}
+
+.header__content-description {
+    font-family: var(--fr300);
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 110px;
+}
+
+form {
+    max-width: 376px;
+    width: 100%;
+    background: white;
+    padding: 32px 41px 13px;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.header__form-title {
+    font-family: var(--fr400);
+    font-size: 20px;
+    color: rgba(1, 21, 86, 0.9);
+    margin-bottom: 42px;
+    line-height: 15px;
+}
+
+.form-control {
+    padding: 10px 5px;
+    border: 0;
+    border-bottom: 1px solid #c7c7c7;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #c7c7c7;
+}
+
+header form textarea {
+    max-height: 92px;
+    resize: none;
+
+}
+
+.header__form-btn {
+    padding: 21px 23px 18px 23px;
+    line-height: 12px;
+    background: #011556;
+    border-radius: 27px;
+    font-family: var(--fr700);
+    font-size: 16px;
+    color: white;
+}
+
+.header__form-btn i {
+    font-size: 16px;
+    color: white;
+}
+
+.header__form-input {
+    margin-bottom: 23px;
+}
+
+header button:focus {
+    outline: none;
+}
+
+/* ========================================== header end ================================ */
+/* ========================================== main start ================================ */
+.tours__countries-title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: #011556;
+    line-height: 36px;
+    margin: 70px 0;
+}
+
+.tours__item-link {
+    display: inline-block;
+    font-family: var(--fr700);
+    font-size: 36px;
+    color: #011556;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #011556;
+    margin-bottom: 69px;
+}
+
+.tours__item-link:hover {
+    color: #011556;
+}
+
+.sights {
+    background: #fbfbfb;
+    padding: 70px 0;
+}
+
+.sights__title {
+    font-family: var(--fr900);
+    font-size: 50px;
+    color: #011556;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.sights__description {
+    font-family: var(--fr500);
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 70px;
+}
+
+.sights__box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.sights__box-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(204, 210, 230, 0.71);
+    transform: scale(0);
+    transition: 0.7s;
+}
+
+.sights__hover-title {
+    font-family: var(--fr400);
+    font-size: 30px;
+    color: #011556;
+    margin-bottom: 0;
+    padding-top: 25px;
+}
+
+.sights__hover-description {
+    max-width: 205px;
+    width: 100%;
+    font-family: var(--fr400);
+    font-size: 14px;
+    color: #011556;
+    margin-bottom: 0;
+}
+
+.sights__hover-link {
+    text-decoration: none;
+    font-family: var(--fr400);
+    font-size: 17px;
+    color: white;
+    padding: 17px 45px;
+    background: #011556;
+    border-radius: 24px;
+    line-height: 12px;
+}
+
+.sights__hover-link:hover {
+    color: white;
+}
+
+.sights__box:hover .sights__box-hover {
+    transform: scale(1);
+}
+
+.documents {
+    padding: 70px 0;
+}
+
+.documents__title {
+    font-family: var(--fr700);
+    font-size: 50px;
+    color: #011556;
+    line-height: 36px;
+    margin-bottom: 60px;
+}
+
+.documents p {
+    font-family: var(--fr400);
+    font-size: 20px;
+    color: #000000;
+    line-height: 25px;
+}
+
+.documents__list li {
+    list-style: none;
+    font-family: var(--fr400);
+    font-size: 20px;
+    color: #000000;
+}
+
+.best__tours{
+    background: #fbfbfb;
+    padding: 70px 0;
+}
+
+.best__tours-title {
+    font-family: var(--fr700);
+    font-size: 50px;
+    color: #011556;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.best__tours-description {
+    font-family: var(--fr400);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+
+.best__tours-price{
+    position: relative;
+}
+
+.best__tours-price img{
+    width: 100%;
+}
+
+.best__price {
+    width: 262px;
+    font-family: var(--fr500);
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.7);
+    background: white;
+    position: absolute;
+    bottom: -28px;
+    margin-bottom: 0;
+    padding: 11px 7px;
+    line-height: 20px;
+}
+
+.best__price span {
+    color: rgba(1, 21, 86, 0.7);
+    line-height: 22px;
+    padding-top: 7px;
+    display: inline-block;
+}
+
+.reviews{
+    padding: 70px 0;
+}
+
+.reviews__title{
+    font-family: var(--fr700);
+    font-size: 50px;
+    line-height: 36px;
+    color: #011556;
+    margin-bottom: 30px;
+}
+
+.reviews__description{
+    font-family: var(--fr500);
+    font-size: 16px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 142px;
+}
+
+.reviews__box{
+    position: relative;
+    box-shadow: 0 0 27px rgba(20, 20, 21, 0.09);
+    margin-bottom: 70px;
+}
+
+.reviews__box img{
+    max-width: 100px;
+    max-height: 100px;
+    position: absolute;
+    top: -56px;    
+}
+
+.reviews__box-description{
+    max-width: 448px;
+    text-align: center;
+    padding-top: 80px;
+    font-family: var(--fr500);
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.7);  
+    
+}
+
+.box__star i{
+    color: #ffef3b;
+    font-size: 13px;
+}
+
+.author{
+    font-family: var(--fr500);
+    font-size: 17px;
+    color: hsla(0, 0%, 0%, 0.8);
+    padding-bottom: 38px;
+    line-height: 12px;
+}
+/* ========================================== main end ================================ */
+/* ========================================== footer start ================================ */
+.footer__section{
+    background: #f7f7f7;
+    padding: 70px 0;
+}
+
+.contacts{
+    padding: 22px 70px;
+    background: #011556;
+    border-radius: 27px;
+    line-height: 12px;
+    font-family: var(--fr400);
+    font-size: 17px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contacts:hover{
+    color: white;
+}
+
+.social a{
+    padding: 18px;
+    background:#011556;
+    border-radius: 50px;
+    margin-right: 16px;
+    opacity: 0.3;
+}
+.social a:hover{
+    opacity: 1;
+}
+
+.social a i:nth-child(1){
+    width: 21px;
+    height: 21px;
+    text-align: center;
+}
+.social a i{
+    font-size: 21px;
+    color: white;    
+}
+
+.social p{
+    font-family: var(--fr400);
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+/* ========================================== footer end ================================ */
+
+/* ============ adaptive ============ */
+@media(max-width:992px){
+    .header__content-title{
+        font-size: 40px;
+    }
+    .tours__countries-title{
+        font-size: 40px;
+    }
+    .sights__title{
+        font-size: 40px;
+    }
+    .documents__title{
+        font-size: 40px;
+    }
+    .best__tours-title{
+        font-size: 40px;
+    }
+    .reviews__title{
+        font-size: 40px;
+    }
+    .best__tours-price{
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:768px){
+    .logo{
+        font-size: 30px;
+    }
+    .header__content-title{
+        font-size: 30px;
+    }  
+    .tours__item-link{
+        font-size: 30px;
+    }  
+    .tours__countries-title{
+        font-size: 30px;
+    }
+    .sights__title{
+        font-size: 30px;
+    }
+    .documents__title{
+        font-size: 30px;
+    }
+    .best__tours-title{
+        font-size: 30px;
+    }
+    .reviews__title{
+        font-size: 30px;
+    }
+    .best__tours-price{
+        margin-bottom: 50px;
+    }
+    .reviews__description {
+        line-height: 20px;
+    }
+}
+
+@media(max-width:576px){
+    .social{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social__network{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,634 @@
+@import 'fonts.css';
+/* ======================================= root setting start ================================== */
+
+:root {
+    --white: #ffffff;
+    --mt-text: #bdbdbd;
+    --mb-text: #a6a6a6;
+    --bg-callme: #68bf3b;
+    --bg-online_order: linear-gradient(to top, #3d8601, #6ad017);
+    --footer-bg: #060503;
+    --text-menu: rgba(104, 205, 22, 0.20);
+    --fm100: 'Montserrat Thin';
+    --fm300: 'Montserrat Light';
+    --fm400: 'Montserrat Regular';
+    --fm700: 'Montserrat Bold';
+    --fm900: 'Montserrat Black';
+    --col-1: calc(100%/12*1);
+    --col-2: calc(100%/12*2);
+    --col-3: calc(100%/12*3);
+    --col-4: calc(100%/12*4);
+    --col-5: calc(100%/12*5);
+    --col-6: calc(100%/12*6);
+    --col-7: calc(100%/12*7);
+    --col-8: calc(100%/12*8);
+    --col-9: calc(100%/12*9);
+    --col-10: calc(100%/12*10);
+    --col-11: calc(100%/12*11);
+    --col-12: calc(100%/12*12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    padding: 0 15px;
+    width: var(--col-4);
+}
+
+.col-8 {
+    padding: 0 15px;
+    width: var(--col-8);
+}
+
+.col-md-6 {
+    width: var(--col-6);
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* ======================================= root setting end ================================== */
+/* ======================================= header start ================================== */
+header {
+    background: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 768px;
+}
+
+.header_link {
+    padding-top: 30px;
+}
+
+.header_link p:nth-child(1) a {
+    font-family: var(--fm700);
+    font-size: 24px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.header_link p:nth-child(2) a:nth-child(1) {
+    font-family: var(--fm400);
+    font-size: 24px;
+    color: var(--white);
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.header_link p:nth-child(2) a:nth-child(2) {
+    font-family: var(--fm400);
+    font-size: 16px;
+    color: var(--white);
+    padding: 18px 26px;
+    background: var(--bg-callme);
+    border-radius: 25px;
+    line-height: 12px;
+    display: inline-block;
+}
+
+.header_content {
+    margin-top: 177px;
+}
+
+.header_content p:nth-child(1) {
+    font-family: var(--fm900);
+    font-size: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+
+.header_content h1 {
+    font-family: var(--fm900);
+    font-size: 72px;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 53px;
+}
+
+.header_content p:nth-child(3) {
+    font-family: var(--fm400);
+    font-size: 18px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 39px;
+    margin-bottom: 50px;
+}
+
+.header_content p:nth-child(4) a {
+    font-family: var(--fm400);
+    font-size: 16px;
+    color: var(--white);
+    padding: 18px 43px;
+    background: var(--bg-online_order);
+    border-radius: 25px;
+    line-height: 12px;
+}
+
+/* ======================================= header end ================================== */
+/* ======================================= main start ================================== */
+.main_top {
+    margin-top: 82px;
+}
+
+.main_top h2 {
+    font-family: var(--fm700);
+    font-size: 36px;
+    color: var(--bg-callme);
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    padding-top: 26px;
+}
+
+.main_top p {
+    font-family: var(--fm400);
+    font-size: 18px;
+    color: var(--mt-text);
+    line-height: 36px;
+}
+
+.top_left img {
+    width: 100%;
+}
+
+.autograph p {
+    font-family: var(--fm700);
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.autograph img {
+    margin-left: 62px;
+}
+
+main .menu {
+    font-family: var(--fm700);
+    font-size: 36px;
+    color: var(--text-menu);
+    margin-top: 67px;
+    margin-bottom: 50px;
+}
+
+.menu_list .row {
+    display: block;
+}
+
+.menu_list .card {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.menu_list .left_list img {
+    width: 100%;
+}
+
+.menu_list .left_list {
+    position: relative;
+}
+
+.menu_list .left_list span {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #68cd16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    left: 30px;
+    font-family: var(--fm700);
+    font-size: 18px;
+    color: var(--white);
+}
+
+.menu_list .list_right {
+    width: 100%;
+}
+
+.menu_list .list_right .item_left h2 {
+    font-family: var(--fm700);
+    font-size: 30px;
+    color: var(--mb-text);
+    text-transform: uppercase;
+    /* padding: 30px 0; */
+    line-height: 22px;
+
+}
+
+.menu_list .list_right .item_left ul {
+    font-family: var(--fm400);
+    font-size: 14px;
+    color: var(--mb-text);
+    line-height: 25px;
+    padding-top: 30px;
+}
+
+.menu_list .list_right .item_right p:nth-child(1) {
+    font-family: var(--fm700);
+    font-size: 30px;
+    color: var(--mb-text);
+    line-height: 26px;
+    margin-bottom: 28px;
+    text-align: right;
+}
+
+.menu_list .list_right .item_right p:nth-child(1) span {
+    font-family: var(--fm300);
+    font-size: 18px;
+    color: var(--mb-text);
+}
+
+.menu_list .list_right .item_right p:nth-child(2) a {
+    padding: 18px 43px;
+    background: var(--bg-online_order);
+    font-family: var(--fm400);
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 25px;
+    line-height: 12px;
+}
+
+.main_bottom .item_img {
+    text-align: center;
+}
+
+.main_bottom .item_img img {
+    width: 100%;
+}
+
+.main_bottom .item_img h2 {
+    font-family: var(--fm700);
+    font-size: 14px;
+    color: var(--mb-text);
+    text-transform: uppercase;
+    line-height: 15px;
+    margin-top: 28px;
+    margin-bottom: 19px;
+}
+
+.main_bottom .item_img p {
+    font-family: var(--fm400);
+    font-size: 14px;
+    color: var(--mb-text);
+}
+
+/* ======================================= main end ================================== */
+/* ======================================= footer start ================================ */
+footer {
+    background: var(--footer-bg);
+    padding-top: 30px;
+    margin-top: 100px;
+}
+
+.footer_link p:nth-child(1) a {
+    font-family: var(--fm700);
+    font-size: 24px;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.footer_link p:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.footer_link p:nth-child(2) a:nth-child(1) {
+    font-family: var(--fm400);
+    font-size: 24px;
+    color: var(--white);
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.footer_link p:nth-child(2) a:nth-child(2) {
+    font-family: var(--fm400);
+    font-size: 16px;
+    color: var(--white);
+    display: inline-block;
+    border-radius: 25px;
+    background: var(--bg-callme);
+    padding: 18px 26px;
+    line-height: 16px;
+}
+
+footer p {
+    font-family: var(--fm100);
+    font-size: 16px;
+    color: var(--mb-text);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* ======================================= footer end ================================== */
+
+/* ====================== adaptive ======================= */
+
+@media(min-width:993px) {
+    .col-xl-8 {
+        width: var(--col-8);
+        padding: 0 15px;
+    }
+}
+
+@media(max-width:992px) {
+    .menu_list .list_right .item_right p:nth-child(2) a {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    .col-lg-5 {
+        width: var(--col-5);
+        padding: 0 15px;
+    }
+
+    .col-lg-8 {
+        width: var(--col-8);
+        padding: 0 15px;
+    }
+
+    .menu_list .card {
+        align-items: center;
+    }
+
+    .justify-content-md-around {
+        justify-content: space-around;
+    }
+
+    .main_bottom .item_img {
+        margin-bottom: 30px;
+    }
+
+    .main_top h2 {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .autograph p {
+        font-size: 20px;
+    }
+
+    .header_link p:nth-child(2) a:nth-child(2) {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .header_content p:nth-child(4) a {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .footer_link p:nth-child(2) a:nth-child(2) {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+}
+
+@media(max-width:850px) {
+    .flex-md-column {
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 50px;
+    }
+
+    .flex-md-wrap {
+        flex-wrap: wrap;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(1) {
+        text-align: start;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(1) {
+        margin-bottom: 15px;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(2) {
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+
+    .col-md-6 {
+        width: var(--col-6);
+        padding: 0 15px;
+    }
+
+    .col-md-5 {
+        width: var(--col-5);
+        padding: 0 15px;
+    }
+
+    .justify-content-md-center {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .top_left img {
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:700px) {
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .flex-sm-wrap {
+        flex-wrap: wrap;
+    }
+
+    .menu_list .list_right {
+        margin-top: 30px;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(2) {
+        text-align: center;
+    }
+
+    .menu_list .list_right .item_right p:nth-child(1) {
+        padding-left: 0;
+    }
+
+    main .menu {
+        text-align: center;
+    }
+
+    .col-sm-8 {
+        width: var(--col-8);
+        padding: 0 15px;
+    }
+    .col-sm-10 {
+        width: var(--col-10);
+        padding: 0 15px;
+    }
+
+    .menu_list .list_right .item_left h2{
+        text-align: center;
+    }
+}
+
+@media(max-width:650px) {
+
+    .header_link p:nth-child(2) {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header_link p:nth-child(2) a:nth-child(1) {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .header_content h1 {
+        font-size: 50px;
+    }
+
+    /* .main_top .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    } */
+
+    .col-sm-7 {
+        width: var(--col-7);
+        padding: 0 15px;
+    }
+
+    .col-sm-12 {
+        width: var(--col-12);
+        padding: 0 15px;
+    }
+
+    .m-sm-0-auto {
+        margin: 0 auto;
+    }
+
+    .top_right {
+        text-align: center;
+    }
+
+    .main_bottom{
+        margin-top: 70px;
+    }
+
+    .footer_link p:nth-child(2){
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer_link p:nth-child(2) a:nth-child(1){
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:460px){
+    .header_link p:nth-child(2) a:nth-child(1){
+        display: none;
+    }
+
+    .footer_link p:nth-child(2) a:nth-child(2){
+        display: none;
+    }
+
+    .footer_link p:nth-child(2) a:nth-child(1){
+        font-size: 20px;
+    }
+    .footer_link p:nth-child(2) a:nth-child(1){
+        margin-right: 0;
+    }
+
+    .col-xs-12{
+        width: var(--col-12);
+        padding: 0 15px;
+    }
+
+    .header_content h1{
+        font-size: 30px;
+    }
+
+    .header_content p:nth-child(1){
+        font-size: 15px;
+    }
+
+    .main_top h2{
+        font-size: 20px;
+    }
+    .autograph img{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
+
+@media(max-width:360px){
+    .header_link p:nth-child(2) a:nth-child(2){
+        display: none;
+    }
+
+    .footer_link p:nth-child(2) a:nth-child(1){
+        font-size: 16px;
+    }
+
+    .autograph img{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+}
