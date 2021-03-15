@@ -16,7 +16,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 
 }
 
@@ -35,6 +35,7 @@ header nav ul li a {
     font-family: var(--fr400);
     font-size: 16px;
     color: var(--text-dark);
+    text-decoration: none;
 
 }
 
@@ -153,9 +154,6 @@ header nav ul {
     color: var(--text-main);
     display: inline-block;
     margin-top: 80px;
-}
-
-.description_right a:hover {
     text-decoration: none;
 }
 
@@ -250,6 +248,7 @@ header nav ul {
     font-family: var(--fr400);
     font: 16px;
     color: #7e7c7c;
+    text-decoration: none;
 
 }
 
@@ -261,6 +260,7 @@ header nav ul {
     font-family: var(--fr400);
     font-size: 18px;
     color: #7e7c7c;
+    text-decoration: none;
 }
 
 .footer_link a:hover {
@@ -275,7 +275,7 @@ header nav ul {
     text-align: center;
 }
 
-.footer_rule a:hover {
+.footer_rule a {
     text-decoration: none;
 }
 
